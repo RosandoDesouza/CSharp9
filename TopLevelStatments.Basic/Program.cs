@@ -14,7 +14,8 @@ class Person
 
     public string LastName { get; set; }
 
-    public string DisplayFullName(){
+    public string DisplayFullName()
+    {
         return $"{this.FirstName} {this.LastName}";
     }
 }
