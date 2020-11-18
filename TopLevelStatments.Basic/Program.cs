@@ -1,12 +1,20 @@
 ﻿using System;
 
-namespace TopLevelStatments.Basic
+Console.WriteLine("Hello World!");
+
+Person jack = new Person();
+jack.FirstName = "Jack";
+jack.LastName = "Doe";
+
+Console.WriteLine(jack.DisplayFullName());
+
+class Person 
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+    public string FirstName { get; set; }  
+
+    public string LastName { get; set; }
+
+    public string DisplayFullName(){
+        return $"{this.FirstName} {this.LastName}";
     }
 }
